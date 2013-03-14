@@ -1,6 +1,6 @@
 var  context = new webkitAudioContext()
 ,    fs = require('fs')
-,    trolowave = fs.readFileSync('./trololo.wav', 'base64')
+,    trolowave = fs.readFileSync(__dirname + '/trololo.wav', 'base64')
 ,    b2b = require('./base2binary.js')
 ;
 
