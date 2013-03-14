@@ -1,0 +1,19 @@
+{
+  "name": "troloop",
+  "version": "0.0.1",
+  "description": "An html5 Web Audio bufferSource Node.",
+  "main": "troloop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+	"browserify":{
+	  "transform" : "brfs",
+	},
+	"dependencies" : {
+		"amod" : ""
+	},
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
