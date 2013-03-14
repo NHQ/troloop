@@ -1,11 +1,14 @@
 {
   "name": "troloop",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "test audioBufferSource node for web audio API",
   "main": "troloop.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+	"browserify": {
+		"transform" : "brfs"
+	},
   "repository": "",
   "author": "johnny",
   "license": "MIT",
