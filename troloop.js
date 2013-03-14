@@ -14,15 +14,9 @@ module.exports = function(context){
 	
 	var tbuff = b2b.decode(trolowave);
 
-	context.decodeAudioData(tbuff.buffer, function(buffer){
-
-		source.buffer = buffer;
-
-		var evt = new CustomEvent('waveReady', {bubbles: true, cancelable: true, detail : {source: source }});
-
-	  window.dispatchEvent(evt);
-
-	});
+	var buffer = context.createBuffer(tbuff.buffer, true)
+	
+	source.buffer = buffer;
 	
 	return source
 	
