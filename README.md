@@ -1,8 +1,8 @@
 # troloop
 
-An html5 Web Audio bufferSource Node, for testing purposes. The node will play a 17 second track converted from a base64 encoded wav file (included).
+An html5 Web Audio bufferSource Node, for testing purposes. The node will play a 17 second track converted from a base64 encoded wav file (included). You can connect it to any other web audio node, including [webaudio nodes](http://github.com/NHQ/webaudio)
 
-For use with [Browserify](http://github.com/substack/browserify) 
+This module is for use with [Browserify](http://github.com/substack/browserify) 
 
 ## usage
 
