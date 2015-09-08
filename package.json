@@ -6,11 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-	"browserify": {
-		"transform" : "brfs"
-	},
+  "browserify": {
+    "transform": "brfs"
+  },
   "repository": "",
   "author": "johnny",
   "license": "MIT",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "base64-arraybuffer": "^0.1.2"
+  }
 }

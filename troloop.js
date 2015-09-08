@@ -1,25 +1,14 @@
-var  context = new webkitAudioContext()
-,    fs = require('fs')
-,    trolowave = fs.readFileSync(__dirname + '/trololo.wav', 'base64')
-,    b2b = require('./base2binary.js')
-;
+var  fs = require('fs')
+var  trolowave = fs.readFileSync(__dirname + '/trololo.wav', 'base64')
+var  b2a = require('./base64-arraybuffer')
+var filebuf = require('jsynth-file-sample')
 
-module.exports = function(context){
+module.exports = function(context, cb){
 	
-	if(!context) context = new webkitAudioContext();
-	
-	var source = context.createBufferSource();
+  filebuf(context, b2a.decode(trolowave, function(e, node){
+    cb(e, node)
+  })) 
 
-	source.loop = true;
-	
-	var tbuff = b2b.decode(trolowave);
-
-	var buffer = context.createBuffer(tbuff.buffer, true)
-	
-	source.buffer = buffer;
-	
-	return source
-	
 }
 
 
